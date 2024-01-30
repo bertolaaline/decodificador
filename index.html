@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="formulario">
+                    <h1 class="titulo">Decodificador</h1>
+                    <label class="label" for="inputText">Texto:</label>
+                    <textarea id="inputText" placeholder="Insira o texto"></textarea>
+                    
+                    <label class="label" for="option">Escolha a Opção:</label>
+                    <select id="option">
+                        <option value="criptografar">Criptografar</option>
+                        <option value="descriptografar">Descriptografar</option>
+                    </select>
+                    
+                    <button onclick="processarTexto()">Processar</button>
+                    
+                    <label class="label"  for="outputText">Resultado:</label>
+                    <textarea id="outputText" readonly></textarea>
+                    
+                    <button onclick="copiarTexto()">Copiar para a Área de Transferência</button>
+                </div>
+                <div class="imagem">
+                    <img  class="img" src="./img/criptografia-de-dados.jpeg" alt="">
+                </div>
+            </div> 
+            <footer class="rodape" >Esse Decodificador foi desenvolvido por Aline </footer>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</section>
+
+</html>
